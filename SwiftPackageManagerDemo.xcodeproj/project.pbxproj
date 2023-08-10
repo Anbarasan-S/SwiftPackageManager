@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A39442532A8505B000FC074E /* DisplayerPackage in Frameworks */ = {isa = PBXBuildFile; productRef = A39442522A8505B000FC074E /* DisplayerPackage */; };
+		A39442562A85075900FC074E /* DisplayerPackage in Frameworks */ = {isa = PBXBuildFile; productRef = A39442552A85075900FC074E /* DisplayerPackage */; };
 		A3A10EB32A839E35003726A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A10EB22A839E35003726A9 /* AppDelegate.swift */; };
 		A3A10EB52A839E35003726A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A10EB42A839E35003726A9 /* SceneDelegate.swift */; };
 		A3A10EB72A839E35003726A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A10EB62A839E35003726A9 /* ViewController.swift */; };
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A394424F2A85047C00FC074E /* DisplayerPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DisplayerPackage; path = ../../DisplayerPackage; sourceTree = "<group>"; };
 		A3A10EAF2A839E35003726A9 /* SwiftPackageManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPackageManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A10EB22A839E35003726A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A10EB42A839E35003726A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A39442532A8505B000FC074E /* DisplayerPackage in Frameworks */,
+				A39442562A85075900FC074E /* DisplayerPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +81,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A39442122A83A3BB00FC074E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A394424E2A85047C00FC074E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A394424F2A85047C00FC074E /* DisplayerPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		A3A10EA62A839E35003726A9 = {
 			isa = PBXGroup;
 			children = (
+				A394424E2A85047C00FC074E /* Packages */,
 				A3A10EB12A839E35003726A9 /* SwiftPackageManagerDemo */,
 				A3A10EC82A839E36003726A9 /* SwiftPackageManagerDemoTests */,
 				A3A10ED22A839E36003726A9 /* SwiftPackageManagerDemoUITests */,
 				A3A10EB02A839E35003726A9 /* Products */,
+				A39442122A83A3BB00FC074E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +165,10 @@
 			dependencies = (
 			);
 			name = SwiftPackageManagerDemo;
+			packageProductDependencies = (
+				A39442522A8505B000FC074E /* DisplayerPackage */,
+				A39442552A85075900FC074E /* DisplayerPackage */,
+			);
 			productName = SwiftPackageManagerDemo;
 			productReference = A3A10EAF2A839E35003726A9 /* SwiftPackageManagerDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +241,9 @@
 				Base,
 			);
 			mainGroup = A3A10EA62A839E35003726A9;
+			packageReferences = (
+				A39442542A85075900FC074E /* XCRemoteSwiftPackageReference "DisplayerPackage" */,
+			);
 			productRefGroup = A3A10EB02A839E35003726A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -445,6 +474,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +503,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +633,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A39442542A85075900FC074E /* XCRemoteSwiftPackageReference "DisplayerPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Anbarasan-S/DisplayerPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A39442522A8505B000FC074E /* DisplayerPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DisplayerPackage;
+		};
+		A39442552A85075900FC074E /* DisplayerPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A39442542A85075900FC074E /* XCRemoteSwiftPackageReference "DisplayerPackage" */;
+			productName = DisplayerPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3A10EA72A839E35003726A9 /* Project object */;
 }
